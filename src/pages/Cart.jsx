@@ -53,7 +53,7 @@ function Cart() {
                       <img
                         height={"100px"}
                         width={"100px"}
-                        src={product.thumbnail}
+                        src={product.image}
                         alt=""
                       />
                     </td>

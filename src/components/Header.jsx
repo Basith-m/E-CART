@@ -10,10 +10,9 @@ function Header() {
   const cart = useSelector((state)=>state.cartReducer)
   return (
     <>
-        <Navbar expand="lg" className='bg-primary position-fixed top-0 w-100 mb-5 z-1'>
+        <Navbar expand="lg" style={{zIndex:'100'}} className='bg-primary position-fixed top-0 w-100 mb-5 z-1'>
         <Container>
-            <Navbar.Brand><Link to={'/'} style={{textDecoration:'none',color:'white',fontWeight:'bold',fontSize:'25px'}}>
-                <i class='fa-solid fa-truck-fast me-3 fs-3'></i>E-cart</Link>
+            <Navbar.Brand><Link to={'/'} style={{textDecoration:'none',color:'white',fontWeight:'bold',fontSize:'25px'}}>TeeRex</Link>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">

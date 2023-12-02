@@ -6,17 +6,16 @@ function Footer() {
     <div style={{width:'100%',height:'300px'}} className='bg-primary d-flex flex-column justify-content-center align-items-center text-white'>
       <div className="footer-div d-flex justify-content-evenly w-100 flex-wrap">
         <div className="website" style={{width:'400px'}}>
-          <h4> <i class='fa-solid fa-truck-fast me-2'></i>{' '}
-          E-cart</h4>
+          <h4 className='fw-bold'>TeeRex</h4>
           <h6>Designed and built with all the love in the world by the Luminar team with the help of our contributors.</h6>
           <h6>Code Licensed Luminar , docs CCBY 3.0</h6>
           <p className='text-secondary'>Currently v1.0.0.</p>
         </div>
         <div className="links d-flex flex-column">
           <h4>Links</h4>
-          <Link to={'/'} style={{textDecoration:'none',color:'white'}}>Landing Page</Link>
           <Link to={'/'} style={{textDecoration:'none',color:'white'}}>Home</Link>
-          <Link to={'/'} style={{textDecoration:'none',color:'white'}}>Watch History</Link>
+          <Link to={'/cart'} style={{textDecoration:'none',color:'white'}}>Cart</Link>
+          <Link to={'/wishlist'} style={{textDecoration:'none',color:'white'}}>Wishlist</Link>
         </div>
         <div className="guides d-flex flex-column">
         <h4>Guides</h4>
@@ -41,7 +40,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <p className='text-secondary'>Copyright © 2023 E-cart. Built with React.</p>
+      <p className='text-secondary'>Copyright © 2023 TeeRex. Built with React.</p>
     </div>
   )
 }
